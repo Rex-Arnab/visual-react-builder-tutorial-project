@@ -43,7 +43,7 @@ export const Lesson01: React.FC = () => {
     return (
         <div className={styles.root}>
             <Task />
-            <div className={styles.playground}>
+            <div className={styles.playground} aria-autocomplete="list">
                 {boxes.map((color, idx) => (
                     <Box
                         key={idx}
